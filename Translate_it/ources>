@@ -1,0 +1,119 @@
+[33mcommit 3a78b68d6f8c3c3a421d2fd377ffa1bff0da5541[m
+Author: zabik <zabik@gmail.com>
+Date:   Sat Jul 1 18:16:22 2017 +0300
+
+    "add microsoftApi languages"
+
+[33mcommit f716390ac3b66981a739ab2045a63860bb4f8a4b[m
+Author: zabik <zabik@gmail.com>
+Date:   Sat Jul 1 16:06:15 2017 +0300
+
+    "show result of micrsoftapi to screen"
+
+[33mcommit 2318b9c31c03626178c5f51e3c2a2950a483ae48[m
+Author: zabik <zabik@gmail.com>
+Date:   Sat Jul 1 14:40:49 2017 +0300
+
+    "clean code (microsoft parser still doesnt work)"
+
+[33mcommit 23726e97ad2f2fd3b03f1fbc00069f2deb2b0992[m
+Author: zabik <zabik@gmail.com>
+Date:   Fri Jun 30 01:14:24 2017 +0300
+
+    add change api spinner
+
+[33mcommit 060bc98a59f59953abc70848ca3aab0d0207979c[m
+Author: zabik <zabik@gmail.com>
+Date:   Thu Jun 29 00:57:39 2017 +0300
+
+    add token getter and switch button
+
+[33mcommit 47cba08e27ad007fb45eabf511001d5407d87a92[m
+Author: zabik <zabik@gmail.com>
+Date:   Thu Jun 29 00:54:55 2017 +0300
+
+    add token getter and switch button
+
+[33mcommit 4a548e95dc41a87c73ffc4a7f369e2fc83d3aefc[m
+Author: zabik <zabik@gmail.com>
+Date:   Wed Jun 28 01:59:14 2017 +0300
+
+    mic api without key updating
+
+[33mcommit bf03ee06986ce7b4ee11b247d7f3fc2cc2ee18ec[m
+Author: zabik <zabik@gmail.com>
+Date:   Wed Jun 28 01:54:50 2017 +0300
+
+    adding micApi without key updating
+
+[33mcommit fbbf9fb8e460b33508d2ab5644913a0f7fd12287[m
+Author: zabik <zabik@gmail.com>
+Date:   Wed Jun 28 00:17:25 2017 +0300
+
+    add interface Itranslate
+
+[33mcommit 0daad48720cd09f612ee0d598a6172a23f590e03[m
+Author: zabik <zabik@gmail.com>
+Date:   Mon Jun 26 18:50:47 2017 +0300
+
+    start adding mic api
+
+[33mcommit 1029b54f9ee3f56c6c2ddc19b2d762199ba9cb20[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Mon Apr 24 18:47:30 2017 +0300
+
+    release
+
+[33mcommit 1c4874bf8da41836c92a55285b1a2842d19c3fcb[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Mon Apr 24 03:15:18 2017 +0300
+
+    release
+
+[33mcommit f831a8647a0a1631aee03e8b388ae75c1bfd5f03[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Mon Apr 24 02:16:53 2017 +0300
+
+    small changes
+
+[33mcommit 8b94917d1ec98f5d082ec9409b9a795031dfb175[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Mon Apr 24 02:16:09 2017 +0300
+
+    add alert dialog for deleting history
+
+[33mcommit 604284fc0fb6bab67e8c614b8f8abd0187819c8c[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Mon Apr 24 01:38:36 2017 +0300
+
+    change color for listView and textColor
+
+[33mcommit 95932d8b4aef3c587fb3c758818e17644ce28175[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Mon Apr 24 01:09:59 2017 +0300
+
+    viewPager work with notifyChange
+
+[33mcommit 041bfcff21c15b27917c591ce15e498bae6ed261[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Sat Apr 22 22:13:40 2017 +0300
+
+    history/favorite show use listView with adapter
+
+[33mcommit 2bece996477bd4850d6fcc1e0036209e3d84e4fb[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Tue Apr 18 00:40:23 2017 +0300
+
+    add fragment data transfer
+
+[33mcommit ba868020b957c192a2bc5813c1fae6f062ab4597[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Sun Apr 16 02:52:47 2017 +0300
+
+    first commit
+
+[33mcommit 141b7f01b5f08411149545aed7bc3f36c0657b56[m
+Author: Artem <zaaabik@gmail.com>
+Date:   Sun Apr 16 02:52:16 2017 +0300
+
+    first commit
