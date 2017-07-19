@@ -1,12 +1,8 @@
 package org.suai.zabik.views;
 
-import android.provider.ContactsContract;
-import android.provider.Settings;
-
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
@@ -15,7 +11,6 @@ import org.suai.zabik.models.History;
 
 import java.util.ArrayList;
 
-import static android.os.Build.VERSION_CODES.LOLLIPOP;
 import static org.junit.Assert.*;
 
 /**

@@ -41,7 +41,7 @@ public class ChooseLanguageActivity extends AppCompatActivity {
         List<String> list = Arrays.asList(languages);
         final List<String> lanList = new ArrayList<>(list);
         if (isFrom == 0) {    //if isFrom == 1 its mean user choose language
-                            //we dont need to show last item which name is detect
+                            //we dont needh to show last item which name is detect
             lanList.remove(lanList.size() - 1);
         }
         final ArrayAdapter adapter = new ArrayAdapter(

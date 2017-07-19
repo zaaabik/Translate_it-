@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import org.suai.zabik.fragments.FavoriteFragment;
 import org.suai.zabik.fragments.HistoryFragment;
@@ -18,7 +17,6 @@ import org.suai.zabik.views.R;
 
 import java.util.List;
 import java.util.Vector;
-import java.util.function.ToLongBiFunction;
 
 public class HistoryAndFavoriteActivity extends FragmentActivity implements HistoryFragment.ResultsIsChanged,FavoriteFragment.ChangeFavoriteItem {
     final List<Fragment> fragments = new Vector<>();

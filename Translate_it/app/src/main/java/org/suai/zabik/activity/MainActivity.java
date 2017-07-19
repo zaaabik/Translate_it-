@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import org.suai.zabik.network.MicrosoftTranslate;
 import org.suai.zabik.network.YandexTranslate;
+import org.suai.zabik.network.*;
 import org.suai.zabik.views.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private final int YANDEX_API = 10;
     private final int MICROSOFT_API = 20;
-
+    private Itranslate translateEngine;
     private EditText editText;
     private TextView textView;
     private Button languageFrom;
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         microsoftTranslate = new MicrosoftTranslate(this);
         microsoftTranslate.getToken();
         yandexTranslate = new YandexTranslate(this);
-
+        translateEngine = yandexTranslate;
 
         //find all view elements
         editText = (EditText) findViewById(R.id.editText);
@@ -71,10 +72,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(i == 0){
                     setDefaultBtnValue();
                     currentStat = YANDEX_API;
+                    translateEngine = yandexTranslate;
                 }
                 if(i == 1){
                     setDefaultBtnValue();
                     currentStat = MICROSOFT_API;
+                    translateEngine = microsoftTranslate;
                 }
             }
 
@@ -94,7 +97,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                     if(keyCode == KeyEvent.KEYCODE_BACK || keyCode == KeyEvent.KEYCODE_ENTER) {
-                        makeRequest();
+                        String langFr;
+                        if (languageFrom.getText().toString().length() > 2) {
+                            langFr = "";
+                        } else {
+                            langFr = languageFrom.getText().toString();
+                        }
+                        try {
+                            translateEngine.makeRequest(editText.getText().toString(),
+                                    langFr,
+                                    languageTo.getText().toString(),
+                                    textView);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                 return false;
             }
@@ -105,30 +121,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    private void makeRequest(){
-        String langFr;
-        if(editText.getText().length() != 0) {
-            if (languageFrom.getText().toString().length() > 2) {
-                langFr = "";
-            } else {
-                langFr = languageFrom.getText().toString();
-            }
-
-            if (currentStat == YANDEX_API) {
-                yandexTranslate.makeRequest(editText.getText().toString(),
-                        langFr,
-                        languageTo.getText().toString(),
-                        textView);
-            }
-            if (currentStat == MICROSOFT_API) {
-                microsoftTranslate.makeRequest(editText.getText().toString(),
-                        langFr,
-                        languageTo.getText().toString(),
-                        textView);
-            }
-
-        }
-    }
     //set default text on langFrom and langTo buttons
     private void setDefaultBtnValue() {
         //set  default values to buttons
@@ -168,16 +160,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
         if(resultCode == RESULT_OK) {
             String lang;
+            String langFr;
             switch (requestCode) {
                 case LANGUAGE_FROM:
                     lang = data.getStringExtra("lang");
                     languageFrom.setText(lang);
-                    makeRequest();
+
+                    if (languageFrom.getText().toString().length() > 2) {
+                        langFr = "";
+                    } else {
+                        langFr = languageFrom.getText().toString();
+                    }
+                    try {
+                        translateEngine.makeRequest(editText.getText().toString(),
+                                langFr,
+                                languageTo.getText().toString(),
+                                textView);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     break;
                 case LANGUAGE_TO:
                     lang = data.getStringExtra("lang");
                     languageTo.setText(lang);
-                    makeRequest();
+
+                    if (languageFrom.getText().toString().length() > 2) {
+                        langFr = "";
+                    } else {
+                        langFr = languageFrom.getText().toString();
+                    }
+                    try {
+                        translateEngine.makeRequest(editText.getText().toString(),
+                                langFr,
+                                languageTo.getText().toString(),
+                                textView);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     break;
 
             }

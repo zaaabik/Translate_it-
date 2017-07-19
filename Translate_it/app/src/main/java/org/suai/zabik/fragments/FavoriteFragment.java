@@ -131,15 +131,6 @@ public class FavoriteFragment extends Fragment implements View.OnClickListener{
     public void onStop(){
         super.onStop();
         notifyAllItems();
-        //FavoriteFragment favoriteFragment = (FavoriteFragment) fragments.get(FAVORITE_FRAGMENT);
-//        Vector<Integer> needToUpdate = favoriteFragment.getNeedToDeleteItems();
-//        int size = needToUpdate.size();
-//        for(int i = 0; i < size;++i){
-//            changeStateItem(needToUpdate.get(i));
-//        }
-//        favoriteFragment.notifyAllItems();
-
-
     }
 
     //notify all added item

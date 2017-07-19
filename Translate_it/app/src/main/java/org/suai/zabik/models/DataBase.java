@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-
 
 public class DataBase extends SQLiteOpenHelper {
     private static final String TABLE_NAME = "LastRequest";

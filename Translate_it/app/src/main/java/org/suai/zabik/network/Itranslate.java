@@ -5,6 +5,6 @@ import android.widget.TextView;
  * Created by zabik on 28.06.17.
  */
 
-interface Itranslate {
-    void makeRequest(final String text, final String langFrom, final String langTO, final TextView textView);
+public interface Itranslate {
+    void makeRequest(final String text, final String langFrom, final String langTO, final TextView textView) throws InterruptedException;
 }
